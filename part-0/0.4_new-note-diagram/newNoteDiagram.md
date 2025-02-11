@@ -9,6 +9,8 @@ sequenceDiagram
     server-->>browser: Order the browser to perform new HTTP GET to /exampleapp/notes location
     deactivate server
 
+    Note right of browser: ---The Bottom diagram is identical to when loading the note page for the first time---
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
